@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Likes Likes</title>
+</head>
+<body>
+    <div id="nav-container">
+        <h1>NetworX</h1>
+        <input class="search-bar type="text" placeholder="Search friends">
+        <img src="/Images/my-profile.jpeg" alt="">
+        <p>Raden.</p>
+        <a href="#">Log Out</a>
+    </div>
+    <div id="pagetitle-container">
+        <h2>Your NetWorx Feed</h2>
+    </div>
+    <div id="main-container">
+        <div id="left-container">
+            <div class="profile-card">
+                <img onmouseover="shadowMove(this)" onmouseout="shadowOut(this)" src="/Images/my-profile.jpeg" width="150" height="150"alt="">
+                <a href="#">Edit Avatar</a>
+                <h2>Raden Mantuano</h2>
+            </div>
+            <div class="friendlist-top">
+                <h3>(1M+) Friends & Connections</h3>
+            </div> 
+            <div class="friends-list">
+                <ul class="connection-list"> 
+                    <li>
+                        <a href="#">
+                            <img onmouseover="shadowMove(this)" onmouseout="shadowOut(this)" src="/Superheros/batman.jpeg" alt="">
+                            <h3>Batman</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img onmouseover="shadowMove(this)" onmouseout="shadowOut(this)" src="/Superheros/blackpanther2.jpeg" alt="">
+                            <h3>Black Panther</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img onmouseover="shadowMove(this)" onmouseout="shadowOut(this)" src="/Superheros/wonderwoman.jpeg" alt="">
+                            <h3>Wonder Woman</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img onmouseover="shadowMove(this)" onmouseout="shadowOut(this)" src="/Superheros/brucelee2.jpeg" alt="">
+                            <h3>Bruce Lee</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img onmouseover="shadowMove(this)" onmouseout="shadowOut(this)" src="/Superheros/sub zero.jpeg" alt="">
+                            <h3>Sub Zero</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img onmouseover="shadowMove(this)" onmouseout="shadowOut(this)" src="/Superheros/solidsnake.jpeg" alt="">
+                            <h3>Solid Snake</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img onmouseover="shadowMove(this)" onmouseout="shadowOut(this)" src="/Superheros/scorpion2.jpeg" alt="">
+                            <h3>Scorpion</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img onmouseover="shadowMove(this)" onmouseout="shadowOut(this)" src="/Superheros/hulk.jpeg" alt="">
+                            <h3>Hulk</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img onmouseover="shadowMove(this)" onmouseout="shadowOut(this)" src="/Superheros/superman2.jpeg" alt="">
+                            <h3>Superman</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img onmouseover="shadowMove(this)" onmouseout="shadowOut(this)" src="/Superheros/spiderman.jpeg" alt="">
+                            <h3>Spiderman</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img onmouseover="shadowMove(this)" onmouseout="shadowOut(this)" src="/Superheros/venom2.jpeg" alt="">
+                            <h3>Venom</h3>
+                        </a>
+                    </li>
+                </div>  
+        </div>
+    <div id="right-container">
+        <div id="stories-container">
+            <div class="story-box">
+                <video onmouseover="shadowMovePlay(this)" onmouseout="shadowOutPause(this)" src="/Videos/story1.mp4"></video>
+            </div>
+            <div class="story-box">
+                <video onmouseover="shadowMovePlay(this)" onmouseout="shadowOutPause(this)" src="/Videos/story2.mp4"></video>
+            </div>
+            <div class="story-box">
+                <video onmouseover="shadowMovePlay(this)" onmouseout="shadowOutPause(this)" src="/Videos/story3.mp4"></video>
+            </div>
+            <div class="story-box">
+                <video onmouseover="shadowMovePlay(this)" onmouseout="shadowOutPause(this)" src="/Videos/story4.mp4"></video>
+            </div>
+            <div class="story-box"> 
+                <video onmouseover="shadowMovePlay(this)" onmouseout="shadowOutPause(this)" src="/Videos/story5.mp4"></video>
+            </div>
+            <div class="story-box">
+                <video onmouseover="shadowMovePlay(this)" onmouseout="shadowOutPause(this)" src="/Videos/story6.mp4"></video>
+            </div>
+            <img class="purple-arrow" src="/Images/arrow_right_purple.png" href="#" alt="">
+        </div>
+        <div class="my-post">
+            <img onmouseover="shadowMove(this)" onmouseout="shadowOut(this)" src="/Images/my-profile.jpeg" alt="">
+            <textarea name="" id="" cols="50" rows="2" placeholder="What's on your mind today?...."></textarea>
+        </div>
+        <div class="post-box">
+            <img onmouseover="shadowMove(this)" onmouseout="shadowOut(this)" src="/Images/adrien-s.jpg" alt="">
+            <h2>Neil M</h2>
+            <p class="likes-update1">0 like&#40;s&#41;</p>
+            <button class="like-btn1" onclick="firstPostLike()" onmouseover="shadowMove(this)" onmouseout="shadowOut(this)">Like</button>
+            <p>I just set up this new discord bot, let me know what ya'll think! 
+                <a href="#">Here's the link</a>
+            </p>
+            <textarea name="" id="" cols="50" rows="2" placeholder="leave a comment..."></textarea>
+        </div>
+        <div class="post-box">
+            <img onmouseover="shadowMove(this)" onmouseout="shadowOut(this)" src="/Images/jane-m.jpg" alt="">
+            <h2>Nyla T</h2>
+            <p class="likes-update2">0 like&#40;s&#41;</p>
+            <button class="like-btn2" onclick="secondPostLike()" onmouseover="shadowMove(this)" onmouseout="shadowOut(this)">Like</button>
+            <p>Been a long day, just netflix and chillin' with hubby. Any movie suggestions?.</p>
+            <textarea name="" id="" cols="50" rows="2" placeholder="leave a comment..."></textarea>
+        </div>
+        <div class="post-box">
+            <img onmouseover="shadowMove(this)" onmouseout="shadowOut(this)" src="/Images/alayne-s.jpg" alt="">
+            <h2>Nicole D.</h2>
+            <p class="likes-update3">0 like&#40;s&#41;</p>
+            <button class="like-btn3" onclick="thirdPostLike()" onmouseover="shadowMove(this)" onmouseout="shadowOut(this)">Like</button>
+            <p>OMG! it's finally here ya'll! Just finished <a href="#">my very first novel!<br>
+                I swear you won't regret it!</a></p>
+            <textarea name="" id="" cols="50" rows="2" placeholder="leave a comment..."></textarea>
+        </div>
+        <div class="post-box">
+            <img onmouseover="shadowMove(this)" onmouseout="shadowOut(this)" src="/Images/todd-s.jpg" alt="">
+            <h2>Michael M</h2>
+            <p class="likes-update5">0 like&#40;s&#41;</p>
+            <button class="like-btn5" onclick="fifthPostLike()" onmouseover="shadowMove(this)" onmouseout="shadowOut(this)">Like</button>
+            <p>BORED!!! What are ya'll up to? This pandemic is killin' me!!!</p>
+            <textarea name="" id="" cols="50" rows="2" placeholder="leave a comment..."></textarea>
+        </div>
+        <div class="post-box">
+            <img onmouseover="shadowMove(this)" onmouseout="shadowOut(this)" src="/Images/jane-m.jpg" alt="">
+            <h2>Sony R.</h2>
+            <p class="likes-update6">0 like&#40;s&#41;</p>
+            <button class="like-btn6" onclick="sixthPostLike()" onmouseover="shadowMove(this)" onmouseout="shadowOut(this)">Like</button>
+            <p>Anyone feel that earth quake earlier today? I swear it wasn't only me!</p>
+            <textarea name="" id="" cols="50" rows="2" placeholder="leave a comment..."></textarea>
+        </div>
+        <div class="post-box">
+            <img onmouseover="shadowMove(this)" onmouseout="shadowOut(this)" src="/Images/anne-s.jpg" alt="">
+            <h2>Kobe G</h2>
+            <p class="likes-update7">0 like&#40;s&#41;</p>
+            <button class="like-btn7" onclick="seventhPostLike()" onmouseover="shadowMove(this)" onmouseout="shadowOut(this)">Like</button>
+            <p>Family is planning to eat out tonight, any suggestions? I'm feeling Chinese food YUM!!</p>
+            <textarea name="" id="" cols="50" rows="2" placeholder="leave a comment..."></textarea>
+        </div>
+        <div class="post-box">
+            <img onmouseover="shadowMove(this)" onmouseout="shadowOut(this)" src="/Images/arry-s.jpg" alt="">
+            <h2>Jesse O.</h2>
+            <p class="likes-update8">0 like&#40;s&#41;</p>
+            <button class="like-btn8" onclick="eigthPostLike()" onmouseover="shadowMove(this)" onmouseout="shadowOut(this)">Like</button>
+            <p>Ugh.... why does my gardner have to come so early lol..I mean, I guess... :/ </p>
+            <textarea name="" id="" cols="50" rows="2" placeholder="leave a comment..."></textarea>
+        </div>
+        <div class="post-box">
+            <img onmouseover="shadowMove(this)" onmouseout="shadowOut(this)" src="/Images/phil-s.jpg" alt="">
+            <h2>Ariel H</h2>
+            <p class="likes-update9">0 like&#40;s&#41;</p>
+            <button class="like-btn9" onclick="ninethPostLike()" onmouseover="shadowMove(this)" onmouseout="shadowOut(this)">Like</button>
+            <p>Someone really just told me hmmmm.... Like WHAT!?!</p>
+            <textarea name="" id="" cols="50" rows="2" placeholder="leave a comment..."></textarea>
+        </div>
+        <div class="post-box">
+            <img onmouseover="shadowMove(this)" onmouseout="shadowOut(this)" src="/Images/adrien-s.jpg" alt="">
+            <h2>Roger D.</h2>
+            <p class="likes-update10">0 like&#40;s&#41;</p>
+            <button class="like-btn510" onclick="tenthPostLike()" onmouseover="shadowMove(this)" onmouseout="shadowOut(this)">Like</button>
+            <p>So..... any up this late that want to talk?!? Kinda bored....</p>
+            <textarea name="" id="" cols="50" rows="2" placeholder="leave a comment..."></textarea>
+        </div>
+    </div>
+    </div>
+    <div id="footer-container"></div>
+    
+
+<script src="script.js"></script>
+</body>
+</html>
